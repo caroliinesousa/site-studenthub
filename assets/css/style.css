@@ -1,29 +1,42 @@
 .carrossel {
-    position: relative;
-    max-width: 600px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-
-.slides {
-    display: flex;
-    position: relative;
-    height: 450px; 
-
+  position: relative;
+  width: 800px;
+  height: 500px;
+  margin: 0 auto;
+  perspective: 1200px;
 }
 
 .slide {
-    position: absolute;
-    width: 65%;
-    height: 100%;
-    object-fit: cover;
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-    margin-left: 240px;
-    margin-top: 80px;
-    
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 600px;
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  transition: all 0.6s ease;
+  opacity: 0.4;
+  z-index: 1;
+  margin-top: 30px;
 }
 
-.slide.active {
-    opacity: 1;
+.slide.center {
+  left: 50%;
+  transform: translate(-50%, -50%) scale(1.2);
+  opacity: 1;
+  z-index: 3;
+}
+
+.slide.left {
+  left: 30%; /* mais afastado da imagem central */
+  transform: translate(-50%, -50%) scale(0.85) rotateY(10deg);
+  z-index: 2;
+  opacity: 0.3;
+}
+
+.slide.right {
+  left: 70%; /* mais afastado da imagem central */
+  transform: translate(-50%, -50%) scale(0.85) rotateY(-10deg);
+  z-index: 2;
+  opacity: 0.3;
 }
