@@ -1,3 +1,67 @@
+/* Header */
+.main-header {
+  position: fixed;
+  background-color: #eb0927;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
+/* Container centralizado */
+.container {
+  max-width: 1200px;
+  padding: 5px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Logo com texto branco */
+.logo {
+  margin-left: 30px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 90px; 
+  height: auto;
+}
+
+.logo span {
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+/* Botões do menu */
+.nav-menu {
+  margin-top: 17px;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  margin-left: 900px;
+}
+
+.nav-menu a {
+  margin-left: 10px;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 8px 12px;
+  font-size: 16px;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+  
+.nav-menu a:hover {
+  background-color: #fff;
+  color: #eb0927;
+}
+  
+/* Carrossel de Imagens */
+
 .carrossel {
   position: relative;
   width: 800px;
@@ -17,7 +81,7 @@
   transition: all 0.6s ease;
   opacity: 0.4;
   z-index: 1;
-  margin-top: 30px;
+  margin-top: 80px;
 }
 
 .slide.center {
