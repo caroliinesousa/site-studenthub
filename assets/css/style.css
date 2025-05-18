@@ -1,0 +1,29 @@
+.carrossel {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.slides {
+    display: flex;
+    position: relative;
+    height: 450px; 
+
+}
+
+.slide {
+    position: absolute;
+    width: 65%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    margin-left: 240px;
+    margin-top: 80px;
+    
+}
+
+.slide.active {
+    opacity: 1;
+}
