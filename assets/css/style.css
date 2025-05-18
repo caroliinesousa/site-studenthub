@@ -62,18 +62,16 @@
 
 /* Boas-vindas */
 .boas-vindas {
-    margin-top: 148px; 
-    text-align: center;
-    padding: 10px 0;
-  }
-  
-  .boas-vindas h1 {
-    font-size: 22px;
-    color: #eb0927;
-    margin: 0;
-  }
-  
-  
+  margin-top: 148px; 
+  text-align: center;
+  padding: 10px 0;
+}
+
+.boas-vindas h1 {
+  font-size: 22px;
+  color: #eb0927;
+  margin: 0;
+}
   
 /* Carrossel de Imagens */
 .carrossel {
@@ -118,3 +116,5 @@
   z-index: 2;
   opacity: 0.3;
 }
+
+/* Footer */
