@@ -173,3 +173,66 @@
 .formulario button:hover {
   background-color: #c50720;
 }
+
+/** CSS ESPECÍFICO PARA PÁGINA DE SERVIÇOS **/
+
+.destaque:hover {
+    background-color: #a00e0e;
+  }
+  
+  /***** FAQS *****/
+  .secao-faq {
+    margin-top: 60px;
+    padding: 0 20px;
+  }
+  
+  .faq-item {
+    background-color: #fff;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-left: 4px solid #c71212;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+  }
+  
+  .faq-item h4 {
+    margin: 0 0 8px;
+    font-size: 16px;
+    color: #c71212;
+  }
+  
+  .faq-item p {
+    font-size: 14px;
+    color: #444;
+  }
+  
+  /***** BOTÃO CONTACTOS *****/
+  .botao-contactos {
+    text-align: center;
+    margin: 40px 0 20px;
+  }
+  
+  .btn-contactar {
+    background-color: #c71212;
+    color: #fff;
+    padding: 12px 24px;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+  }
+  
+  .btn-contactar:hover {
+    background-color: #a00e0e;
+  }
+  
+  @media (max-width: 600px) {
+    .servicos-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .destaques-grid {
+      flex-direction: column;
+    }
+  }
+  
