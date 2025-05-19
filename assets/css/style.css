@@ -116,5 +116,60 @@
   z-index: 2;
   opacity: 0.3;
 }
+/* Página de contactos */
+.contactos-container {
+  margin-top: 40px; /* espaço para o header fixo */
+  padding: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
 
-/* Footer */
+.info-contacto {
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.mapa iframe {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.formulario {
+  height: 400px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 12px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario input,
+.formulario textarea {
+  margin-top: 5px;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.formulario button {
+  margin-top: 15px;
+  padding: 12px;
+  background-color: #eb0927;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.formulario button:hover {
+  background-color: #c50720;
+}
