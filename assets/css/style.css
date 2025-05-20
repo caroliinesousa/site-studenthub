@@ -24,15 +24,22 @@
   align-items: center;
 }
 
+.logo-link {
+    display: flex;
+    align-items: center;  /* Centraliza verticalmente */
+    gap: 10px;            /* Espaço entre imagem e texto */
+    text-decoration: none; /* Remove sublinhado do link */
+}
+
 .logo img {
   width: 90px; 
   height: auto;
 }
 
-.logo span {
+.logo-text {
   font-size: 16px;
   font-weight: bold;
-  color: #fff;
+  color:#fff;
 }
 
 /* Botões do menu */
