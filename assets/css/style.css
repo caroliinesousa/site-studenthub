@@ -484,73 +484,73 @@
 }
 
 .formulario form {
-  display: flex;
-  flex-direction: column;
-}
+    display: flex;
+    flex-direction: column;
+}   
 
 .formulario input,
 .formulario textarea {
-  margin-top: 5px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
+    margin-top: 5px;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
 }
 
 .formulario button {
-  margin-top: 15px;
-  padding: 12px;
-  background-color: #eb0927;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #eb0927;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
 }
 
 .formulario button:hover {
-  background-color: #c50720;
+    background-color: #c50720;
 }
 
 /** CSS ESPECÍFICO PARA PÁGINA DE SERVIÇOS **/
 
 .destaque:hover {
     background-color: #a00e0e;
-  }
-  
+}
+
   /***** FAQS *****/
-  .secao-faq {
+.secao-faq {
     margin-top: 60px;
     padding: 0 20px;
-  }
-  
-  .faq-item {
+}
+
+.faq-item {
     background-color: #fff;
     margin-bottom: 15px;
     padding: 15px 20px;
     border-left: 4px solid #c71212;
     border-radius: 6px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
-  }
-  
-  .faq-item h4 {
+}
+
+.faq-item h4 {
     margin: 0 0 8px;
     font-size: 16px;
     color: #c71212;
-  }
-  
-  .faq-item p {
+}
+
+.faq-item p {
     font-size: 14px;
     color: #444;
-  }
-  
-  /***** BOTÃO CONTACTOS *****/
-  .botao-contactos {
+}
+
+/***** BOTÃO CONTACTOS *****/
+.botao-contactos {
     text-align: center;
     margin: 40px 0 20px;
-  }
-  
-  .btn-contactar {
+}
+
+.btn-contactar {
     background-color: #c71212;
     color: #fff;
     padding: 12px 24px;
@@ -558,22 +558,21 @@
     font-size: 16px;
     border-radius: 6px;
     transition: background-color 0.3s;
-  }
-  
-  .btn-contactar:hover {
-    background-color: #a00e0e;
-  }
-  
-  @media (max-width: 600px) {
-    .servicos-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .destaques-grid {
-      flex-direction: column;
-    }
-  }
+}
 
+.btn-contactar:hover {
+    background-color: #a00e0e;
+}
+
+@media (max-width: 600px) {
+    .servicos-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .destaques-grid {
+        flex-direction: column;
+    }
+}
 
   /* ===== MAIN CONTENT ===== */
 .login-container {
@@ -650,6 +649,72 @@ h2 {
     outline: none;
 }
 
+/* Estilo combinado: select + input */
+.input-with-dropdown {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.user-type-select {
+    width: 140px;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px 0 0 5px;
+    border-right: none;
+    font-size: 16px;
+    background-color: #fff;
+    color: #555;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#user-number {
+    flex: 1;
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    border-radius: 0 5px 5px 0;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+#user-number:focus {
+    border-color: #eb0927;
+    outline: none;
+}
+
+.user-type-select:focus {
+    border-color: #eb0927;
+    outline: none;
+}
+
+.user-type-select option {
+    padding: 8px;
+    background: white;
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .input-with-dropdown {
+        flex-direction: column;
+    }
+
+    .user-type-select {
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+        border-right: 1px solid #ddd;
+        border-bottom: none;
+    }
+
+    #user-number {
+        width: 100%;
+        border-radius: 0 0 5px 5px;
+        border-top: none;
+    }
+}
+
 /* Buttons */
 .btn-login-form, .btn-register {
     width: 100%;
@@ -704,11 +769,11 @@ h2 {
         grid-template-columns: 1fr;
         grid-template-rows: auto 1px auto;
     }
-    
+
     .login-form, .register-form {
         padding: 30px 20px;
     }
-    
+
     .divider {
         width: 80%;
         margin: 0 auto;
@@ -720,12 +785,18 @@ h2 {
     .login-container {
         padding: 80px 15px 40px;
     }
-    
+
     h1 {
         font-size: 24px;
     }
-    
+
     h2 {
         font-size: 20px;
     }
 }
+.input-with-dropdown {
+    display: flex;
+    width: 100%;
+}
+
+

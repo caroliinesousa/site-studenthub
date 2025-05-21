@@ -49,8 +49,15 @@
                         <input type="email" id="email" required>
                     </div>
                     <div class="form-group">
-                        <label for="student-number">Número de aluno/Número de professor</label>
-                        <input type="text" id="student-number" required>
+                        <label for="user-type">Número de aluno/Número de professor</label>
+                        <div class="input-with-dropdown">
+                            <select id="user-type" class="user-type-select" required>
+                                <option value="" disabled selected hidden>Selecione o tipo</option>
+                                <option value="aluno">Aluno</option>
+                                <option value="professor">Professor</option>
+                            </select>
+                            <input type="text" id="user-number" placeholder="Introduza o número" required>
+                        </div>
                     </div>
                     <div class="form-group">
                         <label for="new-password">Introduza a sua Password</label>
