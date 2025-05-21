@@ -637,16 +637,13 @@ html, body {
     background-color: #f9f9f9;
   }
   
-  .pagina-servicos {
-    padding: 40px 20px;
-  }
-  
   .pagina-servicos h2 {
     text-align: center;
     font-size: 32px;
     color: #c71212;
     margin-bottom: 30px;
     position: relative;
+    margin-top: 5px;
   }
   
   .pagina-servicos h2::after {
