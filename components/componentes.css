@@ -1,3 +1,153 @@
+/* ===== HEADER STYLES ===== */
+.main-header {
+    position: fixed;
+    background-color: #eb0927;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Logo */
+.logo {
+    padding: 10px 0;
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+/* Menu de Navegação */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-menu a:hover {
+    background-color: #fff;
+    color: #eb0927;
+}
+
+.btn-login {
+    background-color: #fff;
+    color: #eb0927 !important;
+    font-weight: bold;
+}
+
+/* Menu Mobile */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 992px) {
+    .logo img {
+        width: 60px;
+    }
+    
+    .logo-text {
+        font-size: 14px;
+    }
+    
+    .nav-menu a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 15px;
+    }
+    
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        width: 80%;
+        height: calc(100vh - 70px);
+        background-color: #eb0927;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+        gap: 20px;
+        transition: left 0.3s ease;
+    }
+    
+    .nav-menu.active {
+        left: 0;
+    }
+    
+    .nav-menu a {
+        width: 100%;
+        padding: 12px;
+        margin-left: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    }
+    
+    .menu-toggle {
+        display: block;
+    }
+    
+    .logo img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .logo img {
+        width: 45px;
+    }
+}
 /* ===== FOOTER STYLES ===== */
 .main-footer {
     background-color: #eb0927; /* Vermelho IPLUSO */
