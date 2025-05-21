@@ -16,11 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    height: 70px; /* Altura fixa para o header */
 }
 
 /* Logo */
 .logo {
     padding: 10px 0;
+    z-index: 1002; /* Acima do menu mobile */
 }
 
 .logo-link {
@@ -43,7 +45,7 @@
     white-space: nowrap;
 }
 
-/* Menu de Navegação */
+/* Menu de Navegação DESKTOP */
 .nav-menu {
     display: flex;
     align-items: center;
@@ -72,18 +74,59 @@
     font-weight: bold;
 }
 
-/* Menu Mobile */
+/* ===== MENU MOBILE ===== */
 .menu-toggle {
-    display: none;
+    display: none; /* Escondido por padrão (visível apenas em mobile) */
     background: none;
     border: none;
-    color: white;
-    font-size: 24px;
     cursor: pointer;
     padding: 10px;
+    z-index: 1001;
 }
 
-/* Responsividade */
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    top: 8px;
+}
+
+/* Estado ATIVO do menu mobile */
+.menu-toggle.active .hamburger {
+    background: transparent;
+}
+
+.menu-toggle.active .hamburger:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle.active .hamburger:after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* ===== RESPONSIVIDADE ===== */
 @media (max-width: 992px) {
     .logo img {
         width: 60px;
@@ -100,40 +143,43 @@
 }
 
 @media (max-width: 768px) {
-    .container {
-        padding: 0 15px;
-    }
-    
+    /* Esconde o menu desktop */
     .nav-menu {
         position: fixed;
-        top: 70px;
-        left: -100%;
-        width: 80%;
-        height: calc(100vh - 70px);
-        background-color: #eb0927;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #eb0927;
         flex-direction: column;
-        align-items: flex-start;
+        justify-content: center;
         padding: 20px;
-        gap: 20px;
-        transition: left 0.3s ease;
+        gap: 25px;
+        transition: right 0.3s ease;
     }
     
+    /* Mostra o menu quando ativo */
     .nav-menu.active {
-        left: 0;
+        right: 0;
     }
     
+    /* Estilo dos links no mobile */
     .nav-menu a {
         width: 100%;
-        padding: 12px;
-        margin-left: 0;
+        padding: 15px;
+        margin: 0;
         border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
+        font-size: 18px;
     }
     
+    /* Mostra o botão hamburger */
     .menu-toggle {
         display: block;
     }
     
+    /* Ajuste do logo no mobile */
     .logo img {
         width: 50px;
     }
@@ -147,21 +193,26 @@
     .logo img {
         width: 45px;
     }
+    
+    .nav-menu {
+        width: 80%;
+    }
 }
 /* ===== FOOTER STYLES ===== */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Footer base */
 .main-footer {
-    background-color: #eb0927; /* Vermelho IPLUSO */
+    background-color: #eb0927;
     color: #ffffff;
     padding: 40px 0 20px;
     font-family: 'Arial', sans-serif;
     position: relative;
     z-index: 10;
-}
-
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
 }
 
 .footer-grid {
@@ -171,7 +222,7 @@
     margin-bottom: 30px;
 }
 
-/* Logo Section */
+/* Logo + redes sociais */
 .footer-brand {
     display: flex;
     flex-direction: column;
@@ -221,10 +272,10 @@
 .social-icon {
     width: 20px;
     height: 20px;
-    filter: brightness(0) invert(1); /* Converte ícones para branco */
+    filter: brightness(0) invert(1);
 }
 
-/* Links Section */
+/* Links Úteis + Contactos */
 .footer-links h4, 
 .footer-contact h4 {
     margin-bottom: 20px;
@@ -256,30 +307,21 @@
     margin-bottom: 12px;
 }
 
-.footer-links a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    transition: all 0.3s ease;
-    display: inline-block;
-}
-
-.footer-links a:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-    transform: translateX(3px);
-}
-
-/* Contact Section */
+.footer-links a,
 .footer-contact a {
     color: #fff;
     text-decoration: none;
     font-size: 15px;
     transition: all 0.3s ease;
-    display: inline-block;
 }
 
-/* Estilos para a seção de contactos */
+.footer-links a:hover,
+.footer-contact a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    transform: translateX(3px);
+}
+
 .footer-contact {
     display: flex;
     flex-direction: column;
@@ -298,18 +340,6 @@
     filter: brightness(0) invert(1);
 }
 
-.footer-contact a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 15px;
-    transition: opacity 0.3s;
-}
-
-.footer-contact a:hover {
-    opacity: 0.8;
-    text-decoration: underline;
-}
-
 /* Copyright */
 .copyright {
     text-align: center;
@@ -320,23 +350,23 @@
     color: rgba(255, 255, 255, 0.8);
 }
 
-/* ===== RESPONSIVE DESIGN ===== */
+/* Responsivo */
 @media (max-width: 768px) {
     .footer-grid {
         grid-template-columns: 1fr;
         gap: 30px;
     }
-    
+
     .footer-brand {
         text-align: center;
         align-items: center;
     }
-    
+
     .footer-links,
     .footer-contact {
         text-align: center;
     }
-    
+
     .footer-links h4::after,
     .footer-contact h4::after {
         left: 50%;
