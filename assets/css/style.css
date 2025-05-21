@@ -454,65 +454,179 @@
   z-index: 2;
   opacity: 0.3;
 }
-/* Página de contactos */
+
+
+/* === PÁGINA DE CONTACTOS ELEGANTE === */
+
 .contactos-container {
-  margin-top: 40px; /* espaço para o header fixo */
-  padding: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 40px;
-}
+    margin-top: 60px;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  
+  /* TÍTULOS COM LINHA INFERIOR */
+  .contactos-container h2 {
+    font-size: 26px;
+    color: #c71212;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .contactos-container h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c71212;
+    margin: 8px auto 0;
+    border-radius: 4px;
+  }
+  
+  /* BLOCO DE INFORMAÇÕES */
+  .info-contacto {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .contact-item img.contact-icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(-10deg);
+  }
+  
+  /* MAPA E LOCALIZAÇÃO COM ENDEREÇO */
+  .mapa {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .mapa .map-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .mapa .map-address img {
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(-10deg);
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* FORMULÁRIO DE CONTACTO */
+  .formulario {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+  }
+  
+  .formulario p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fefefe;
+    transition: border-color 0.3s;
+  }
+  
+  .formulario input:focus,
+  .formulario textarea:focus {
+    border-color: #c71212;
+    outline: none;
+  }
+  
+  .formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .formulario button {
+    background-color: #c71212;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario button:hover {
+    background-color: #a00e0e;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .contactos-container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  
+    .mapa, .formulario {
+      grid-column: 1 / -1;
+    }
+  }
+  
+  
 
-.info-contacto {
-  background-color: #f0f0f0;
-  padding: 20px;
-  border-radius: 12px;
-  font-size: 16px;
-  line-height: 1.6;
-}
-
-.mapa iframe {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.formulario {
-  height: 400px;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.formulario form {
-  display: flex;
-  flex-direction: column;
-}
-
-.formulario input,
-.formulario textarea {
-  margin-top: 5px;
-  padding: 10px;
-  border-radius: 8px;
-  border: 1px solid #ccc;
-  font-size: 14px;
-}
-
-.formulario button {
-  margin-top: 15px;
-  padding: 12px;
-  background-color: #eb0927;
-  color: white;
-  font-weight: bold;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-}
-
-.formulario button:hover {
-  background-color: #c50720;
-}
-
-/** CSS ESPECÍFICO PARA PÁGINA DE SERVIÇOS **/
 /** CSS ESPECÍFICO PARA PÁGINA DE SERVIÇOS **/
 
 html, body {
@@ -663,7 +777,7 @@ html, body {
     background-color: #a00e0e;
   }
   
-  /***** RESPONSIVO *****/
+  /***** RESPONSIVIDADE PAG SERVICOS *****/
   @media (max-width: 1024px) {
     .servicos-grid {
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
