@@ -1,0 +1,545 @@
+/* ===== HEADER STYLES ===== */
+.main-header {
+    position: fixed;
+    background-color: #eb0927;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px; /* Altura fixa para o header */
+}
+
+/* Logo */
+.logo {
+    padding: 10px 0;
+    z-index: 1002; /* Acima do menu mobile */
+}
+
+.logo-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    text-decoration: none;
+}
+
+.logo img {
+    width: 70px;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.logo-text {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    white-space: nowrap;
+}
+
+/* Menu de Navegação DESKTOP */
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 8px 12px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    white-space: nowrap;
+}
+
+.nav-menu a:hover {
+    background-color: #fff;
+    color: #eb0927;
+}
+
+.btn-login {
+    background-color: #fff;
+    color: #eb0927 !important;
+    font-weight: bold;
+}
+
+/* ===== MENU MOBILE ===== */
+.menu-toggle {
+    display: none; /* Escondido por padrão (visível apenas em mobile) */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 1001;
+}
+
+.hamburger {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background: white;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    transition: all 0.3s ease;
+}
+
+.hamburger:before {
+    top: -8px;
+}
+
+.hamburger:after {
+    top: 8px;
+}
+
+/* Estado ATIVO do menu mobile */
+.menu-toggle.active .hamburger {
+    background: transparent;
+}
+
+.menu-toggle.active .hamburger:before {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.menu-toggle.active .hamburger:after {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+/* ===== RESPONSIVIDADE ===== */
+@media (max-width: 992px) {
+    .logo img {
+        width: 60px;
+    }
+    
+    .logo-text {
+        font-size: 14px;
+    }
+    
+    .nav-menu a {
+        padding: 6px 10px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    /* Esconde o menu desktop */
+    .nav-menu {
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 70%;
+        height: 100vh;
+        background: #eb0927;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px;
+        gap: 25px;
+        transition: right 0.3s ease;
+    }
+    
+    /* Mostra o menu quando ativo */
+    .nav-menu.active {
+        right: 0;
+    }
+    
+    /* Estilo dos links no mobile */
+    .nav-menu a {
+        width: 100%;
+        padding: 15px;
+        margin: 0;
+        border: none;
+        border-bottom: 1px solid rgba(255,255,255,0.2);
+        text-align: center;
+        font-size: 18px;
+    }
+    
+    /* Mostra o botão hamburger */
+    .menu-toggle {
+        display: block;
+    }
+    
+    /* Ajuste do logo no mobile */
+    .logo img {
+        width: 50px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-text {
+        display: none;
+    }
+    
+    .logo img {
+        width: 45px;
+    }
+    
+    .nav-menu {
+        width: 80%;
+    }
+}
+/* ===== FOOTER STYLES ===== */
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 0px;
+}
+
+/* Footer base */
+.main-footer {
+    background-color: #eb0927;
+    color: #ffffff;
+    padding: 40px 0 20px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 10;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+/* Logo + redes sociais */
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.logo-footer {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-footer img {
+    width: 60px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.logo-footer span {
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Social Links */
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.social-links a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+.social-links a:hover {
+    opacity: 0.9;
+    transform: translateX(3px);
+}
+
+.social-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Links Úteis + Contactos */
+.footer-links h4, 
+.footer-contact h4 {
+    margin-bottom: 20px;
+    font-size: 18px;
+    font-weight: 600;
+    color: #fff;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.footer-links h4::after,
+.footer-contact h4::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 40px;
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.footer-links ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer-links li {
+    margin-bottom: 12px;
+}
+
+.footer-links a,
+.footer-contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover,
+.footer-contact a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+    transform: translateX(3px);
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    padding-top: 25px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    font-size: 14px;
+    margin-top: 20px;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .footer-grid {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .footer-brand {
+        text-align: center;
+        align-items: center;
+    }
+
+    .footer-links,
+    .footer-contact {
+        text-align: center;
+    }
+
+    .footer-links h4::after,
+    .footer-contact h4::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+/* === PÁGINA DE CONTACTOS ELEGANTE === */
+
+.contactos-container {
+    margin-top: 60px;
+    padding: 40px 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  
+  /* TÍTULOS COM LINHA INFERIOR */
+  .contactos-container h2 {
+    font-size: 26px;
+    color: #c71212;
+    position: relative;
+    text-align: center;
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .contactos-container h2::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c71212;
+    margin: 8px auto 0;
+    border-radius: 4px;
+  }
+  
+  /* BLOCO DE INFORMAÇÕES */
+  .info-contacto {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+  }
+  
+  .contact-item img.contact-icon {
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(-10deg);
+  }
+  
+  /* MAPA E LOCALIZAÇÃO COM ENDEREÇO */
+  .mapa {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  
+  .mapa .map-address {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+    font-size: 15px;
+    color: #444;
+  }
+  
+  .mapa .map-address img {
+    width: 22px;
+    height: 22px;
+    margin-top: 4px;
+    filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(-10deg);
+  }
+  
+  .mapa iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    border-radius: 10px;
+  }
+  
+  /* FORMULÁRIO DE CONTACTO */
+  .formulario {
+    grid-column: 1 / -1;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    margin-top: 20px;
+  }
+  
+  .formulario p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .formulario label {
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+  }
+  
+  .formulario input,
+  .formulario textarea {
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    background-color: #fefefe;
+    transition: border-color 0.3s;
+  }
+  
+  .formulario input:focus,
+  .formulario textarea:focus {
+    border-color: #c71212;
+    outline: none;
+  }
+  
+  .formulario textarea {
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  .formulario button {
+    background-color: #c71212;
+    color: white;
+    font-size: 15px;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .formulario button:hover {
+    background-color: #a00e0e;
+  }
+  
+  /* RESPONSIVO */
+  @media (max-width: 768px) {
+    .contactos-container {
+      grid-template-columns: 1fr;
+      padding: 20px;
+    }
+  
+    .mapa, .formulario {
+      grid-column: 1 / -1;
+    }
+  }
+  
+  
