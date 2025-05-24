@@ -91,7 +91,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    background: white;
+    
     position: relative;
     transition: all 0.3s ease;
 }
@@ -102,7 +102,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    background: white;
+    
     transition: all 0.3s ease;
 }
 
@@ -383,16 +383,15 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    background-color: #f5f5f5;
-}
 
+}
 .grid-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding: 40px;
-    margin-top: 50px;
-    background-color: #fff;
+    margin-top: 5px;
+    
 }
 
 .event-card {
@@ -474,4 +473,99 @@ body {
     background-color: #c71212;
     margin: 12px auto 0;
     border-radius: 5px;
+}
+
+/* css espaco e eventos faculdade*/
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+}
+
+.pagina-eventos-facul h2 {
+    text-align: center;
+    font-size: 32px;
+    color: #c71212;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: 10px;
+}
+
+.pagina-eventos-facul h2::after {
+    content: '';    
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c71212;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+   
+}
+.grid-events-facul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    margin-top: 10px;
+    
+}
+
+.event-card-facul {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.event-card-facul img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.event-info {
+    padding: 15px;
+}
+
+.evento {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.evento img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    display: block;
+}
+
+.evento-conteudo-facul {
+    padding: 16px;
+}
+
+.evento-facul h3 {
+    font-size: 18px;
+    color: #c71212;
+    margin: 0 0 8px;
+}
+
+.evento-facul p {
+    color: #444;
+    font-size: 14px;
+    margin: 0;
+    line-height: 1.5;
 }
