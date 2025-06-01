@@ -993,12 +993,8 @@ h2 {
     }
 }
 
-/* css espaco e eventos */
-body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f5f5f5;
-    }
+/* ======CSS ESPACOS & EVENTOS====== */
+
 
     .grid-events {
       display: grid;
@@ -1087,4 +1083,5 @@ html, body {
   background-color: #c71212;
   margin: 12px auto 0;
   border-radius: 5px;
+  margin-top: 5px;
 }

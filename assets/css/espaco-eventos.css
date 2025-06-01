@@ -460,6 +460,7 @@ body {
     margin-top: 135px;
 }
 
+/* Tracinho abaixo da palavra Eventos*/
 .pagina-eventos h2::after {
     content: '';
     display: block;
@@ -470,7 +471,7 @@ body {
     border-radius: 5px;
 }
 
-/* css espaco e eventos faculdade*/
+/* CSS espaco e eventos faculdade*/
 html,
 body {
     margin: 0;

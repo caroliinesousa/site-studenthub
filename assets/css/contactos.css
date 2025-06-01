@@ -372,7 +372,7 @@
         transform: translateX(-50%);
     }
 }
-/* === PÁGINA DE CONTACTOS ELEGANTE === */
+/* === PÁGINA DE CONTACTOS  === */
 
 .contactos-container {
     margin-top: 60px;
@@ -384,7 +384,6 @@
     margin-inline: auto;
   }
   
-  /* TÍTULOS COM LINHA INFERIOR */
   .contactos-container h2 {
     font-size: 26px;
     color: #c71212;
@@ -395,6 +394,7 @@
     width: 100%;
   }
   
+  /* Tracinho abaixo da palavra Eventos*/
   .contactos-container h2::after {
     content: '';
     display: block;

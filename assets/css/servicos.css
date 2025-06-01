@@ -398,6 +398,7 @@ body {
     margin-top: 5px;
 }
 
+/* Tracinho abaixo da palavra Eventos*/
 .pagina-servicos h2::after {
     content: '';
     display: block;
