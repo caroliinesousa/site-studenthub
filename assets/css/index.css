@@ -71,7 +71,6 @@
 .btn-login {
     background-color: #fff;
     color: #eb0927 !important;
-    font-weight: bold;
 }
 
 /* ===== MENU MOBILE ===== */
@@ -384,6 +383,7 @@
 .boas-vindas h1 {
   font-size: 25px;
   margin: 0;
+  color:#eb0927;
 }
   
 /* Carrossel de Imagens */

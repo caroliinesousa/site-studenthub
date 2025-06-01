@@ -16,15 +16,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 70px;
-    /* Altura fixa para o header */
+    height: 70px; /* Altura fixa para o header */
 }
 
 /* Logo */
 .logo {
     padding: 10px 0;
-    z-index: 1002;
-    /* Acima do menu mobile */
+    z-index: 1002; /* Acima do menu mobile */
 }
 
 .logo-link {
@@ -73,13 +71,11 @@
 .btn-login {
     background-color: #fff;
     color: #eb0927 !important;
-    font-weight: bold;
 }
 
 /* ===== MENU MOBILE ===== */
 .menu-toggle {
-    display: none;
-    /* Escondido por padrão (visível apenas em mobile) */
+    display: none; /* Escondido por padrão (visível apenas em mobile) */
     background: none;
     border: none;
     cursor: pointer;
@@ -91,7 +87,7 @@
     display: block;
     width: 25px;
     height: 3px;
-    
+    background: white;
     position: relative;
     transition: all 0.3s ease;
 }
@@ -102,7 +98,7 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    
+    background: white;
     transition: all 0.3s ease;
 }
 
@@ -134,11 +130,11 @@
     .logo img {
         width: 60px;
     }
-
+    
     .logo-text {
         font-size: 14px;
     }
-
+    
     .nav-menu a {
         padding: 6px 10px;
         font-size: 14px;
@@ -146,7 +142,6 @@
 }
 
 @media (max-width: 768px) {
-
     /* Esconde o menu desktop */
     .nav-menu {
         position: fixed;
@@ -161,28 +156,28 @@
         gap: 25px;
         transition: right 0.3s ease;
     }
-
+    
     /* Mostra o menu quando ativo */
     .nav-menu.active {
         right: 0;
     }
-
+    
     /* Estilo dos links no mobile */
     .nav-menu a {
         width: 100%;
         padding: 15px;
         margin: 0;
         border: none;
-        border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+        border-bottom: 1px solid rgba(255,255,255,0.2);
         text-align: center;
         font-size: 18px;
     }
-
+    
     /* Mostra o botão hamburger */
     .menu-toggle {
         display: block;
     }
-
+    
     /* Ajuste do logo no mobile */
     .logo img {
         width: 50px;
@@ -193,11 +188,11 @@
     .logo-text {
         display: none;
     }
-
+    
     .logo img {
         width: 45px;
     }
-
+    
     .nav-menu {
         width: 80%;
     }
