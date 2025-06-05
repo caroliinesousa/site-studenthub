@@ -484,19 +484,33 @@ body {
 .secao-faq {
     margin-top: 60px;
     padding: 0 20px;
+    max-width: 1200px;
+    margin-left: auto; 
+    margin-right: auto;
+}
+
+.faq-columns-container {
+    display: flex;
+    justify-content: space-between; 
+    gap: 80px; 
+}
+
+.faq-column {
+    flex: 1; /* Faz ambas as colunas terem a mesma largura */
+    min-width: 0; /* Permite que as colunas se ajustem corretamente */
 }
 
 .faq-item {
     background-color: #fff;
-    margin-bottom: 15px;
-    padding: 15px 20px;
+    margin-bottom: 20px;
+    padding: 18px 20px;
     border-left: 4px solid #c71212;
     border-radius: 6px;
     box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
 }
 
 .faq-item h4 {
-    margin: 0 0 8px;
+    margin: 0 0 10px;
     font-size: 16px;
     color: #c71212;
 }
@@ -504,6 +518,25 @@ body {
 .faq-item p {
     font-size: 14px;
     color: #444;
+    margin: 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .faq-columns-container {
+        flex-direction: column; /* Empilha as colunas em mobile */
+        gap: 15px;
+    }
+    
+    .secao-faq {
+        padding: 0 15px;
+        margin-top: 40px;
+    }
+    
+    .faq-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
 }
 
 /***** BOTÃO CONTACTOS *****/
