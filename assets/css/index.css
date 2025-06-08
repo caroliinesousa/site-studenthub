@@ -431,6 +431,89 @@
   opacity: 0.3;
 }
 
+/* Descubra o StudentHub */
+.student-hub {
+  margin-top: 100px; 
+  text-align: center;
+  padding: 10px 0;
+  margin-left: 60px;
+}
+
+.student-hub h1 {
+  font-size: 25px;
+  margin: 0;
+  color:#eb0927;
+}
+
+/* Tracinho abaixo de boas vindas */
+.student-hub h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c71212;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 50px;
+  background-color: #f9f9f9;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+p.section-subtitle {
+  text-align: center;
+  color: #c71212;
+  margin-bottom: 40px;
+}
+
+.mosaic-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 50px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.mosaic-item {
+  text-align: center;
+  border-radius: 4px;
+  margin-bottom: 60px;
+  width: 250px;
+  height: 200px;
+  padding: 20px;
+  
+}
+
+.mosaic-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  border: 2px solid #d27a2c;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+
+.mosaic-title {
+  font-weight: bold;
+  color: #d27a2c;
+  margin-bottom: 4px;
+}
+
+.mosaic-description {
+  font-size: 0.95em;
+  color: #555;
+  padding: 0 10px;
+}
+
+
 /* Nossos Eventos */
 .nossos-eventos {
   margin-top: 100px; 
@@ -468,9 +551,9 @@
 
 /* Eventos */
 .lista-eventos {
-  display: flex; /* Alinha em linha */
+  display: flex; 
   flex-direction: row;
-  justify-content: center; /* Centraliza horizontalmente */
+  justify-content: center;
   align-items: flex-start;
   gap: 20px;
   border-radius: 20px;
