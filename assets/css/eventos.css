@@ -1,9 +1,5 @@
-/* css espaco e eventos */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
+@import url("normalize.css");
 
-}
 .grid-events {
     display: grid;
     grid-template-columns: repeat(3, 1fr);

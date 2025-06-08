@@ -1,13 +1,4 @@
-/** CSS ESPECÍFICO PARA PÁGINA DE SERVIÇOS **/
-
-html,
-body {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9;
-}
+@import url("normalize.css");
 
 .pagina-servicos h2 {
     text-align: center;
