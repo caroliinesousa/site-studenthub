@@ -374,7 +374,7 @@
 }
 /* Boas-vindas */
 .boas-vindas {
-  margin-top: 100px; 
+  margin-top: 60px; 
   text-align: center;
   padding: 10px 0;
   margin-left: 60px;
@@ -496,14 +496,14 @@ p.section-subtitle {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 2px solid #d27a2c;
+  border: 2px solid #eb0927;
   border-radius: 6px;
   margin-bottom: 12px;
 }
 
 .mosaic-title {
   font-weight: bold;
-  color: #d27a2c;
+  color: #eb0927;
   margin-bottom: 4px;
 }
 
@@ -589,14 +589,15 @@ p.section-subtitle {
   color: #fff;
   text-align: center;
   margin: 0;
+  margin-top: 10px;
 }
 
 /* Informações */
 .evento-conteudo-facul p {
-  font-size: 10px;
+  font-size: 12px;
   color: white;
   text-align: center;
-  border-top: 2px solid #6da34d;
+  border-top: 2px solid #b9251d;
   padding-top: 4px;
   width: 100%;
 }
