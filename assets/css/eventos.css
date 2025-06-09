@@ -67,7 +67,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
@@ -97,7 +96,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Arial, sans-serif;
     background-color: #f9f9f9;
 }
 
@@ -119,11 +117,7 @@ body {
     margin: 12px auto 0;
     border-radius: 5px;
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-   
-}
+
 .grid-events-facul {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
