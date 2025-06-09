@@ -6,7 +6,7 @@
     color: #c71212;
     margin-bottom: 30px;
     position: relative;
-    margin-top: 5px;
+    margin-top: 10px;
 }
 
 /* Tracinho abaixo da palavra Eventos*/
@@ -20,7 +20,7 @@
     border-radius: 5px;
 }
 
-/***** BLOCO DE SERVIÇOS COM IMAGENS *****/
+/***** BLOCO DE SERVIÇOS COM IMAGENS DE SERVICOS DISPONIVEIS *****/
 .servicos-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
@@ -34,6 +34,7 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 .servico:hover {
@@ -59,36 +60,52 @@
     margin: 0 16px 20px;
     line-height: 1.5;
 }
-
-/***** DESTAQUES COM ANIMAÇÃO HOVER *****/
-.secao-destaques {
-    margin-top: 60px;
-    text-align: center;
+.secao-servicos{
+    margin-top: 30px;
 }
 
+/***** BLOCO DE SERVIÇOS COM IMAGENS DE MAIS REQUISITADOS *****/
 .destaques-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-top: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 24px;
+    padding: 20px;
 }
 
 .destaque {
-    background-color: #c71212;
-    color: #fff;
-    padding: 15px 25px;
+    background-color: #fff;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 16px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-    transition: all 0.4s ease;
-    cursor: pointer;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+    
 }
 
 .destaque:hover {
-    background-color: #a00e0e;
-    transform: scale(1.05);
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.destaque img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+}
+
+.destaque h3 {
+    font-size: 18px;
+    color: #c71212;
+    margin: 16px;
+}
+
+.destaque p {
+    color: #444;
+    font-size: 14px;
+    margin: 0 16px 20px;
+    line-height: 1.5;
+}
+.secao-destaques{
+    margin-top: 30px;
 }
 
 /***** FAQS *****/

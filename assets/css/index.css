@@ -102,6 +102,7 @@ p.section-subtitle {
   gap: 50px;
   max-width: 1000px;
   margin: 0 auto;
+  
 }
 
 .mosaic-item {
@@ -142,6 +143,7 @@ p.section-subtitle {
   text-align: center;
   padding: 10px 0;
   margin-left: 60px;
+
 }
 
 .nossos-eventos	 h1 {
@@ -192,8 +194,8 @@ p.section-subtitle {
   border-radius: 4px;
   padding: 10px;
   width: 300px;
-  height: 200px;
-  
+  height: 170px;
+  margin-bottom: 70px;
 }
 
 /* Imagem do card */

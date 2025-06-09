@@ -8,9 +8,9 @@
     gap: 40px;
     max-width: 1200px;
     margin-inline: auto;
-  }
-  
-  .contactos-container h2 {
+}
+
+.contactos-container h2 {
     font-size: 26px;
     color: #c71212;
     position: relative;
@@ -18,10 +18,10 @@
     margin-bottom: 30px;
     display: inline-block;
     width: 100%;
-  }
-  
-  /* Tracinho abaixo da palavra Eventos*/
-  .contactos-container h2::after {
+}
+
+/* Tracinho abaixo da palavra Eventos*/
+.contactos-container h2::after {
     content: '';
     display: block;
     width: 60px;
@@ -29,10 +29,10 @@
     background-color: #c71212;
     margin: 8px auto 0;
     border-radius: 4px;
-  }
-  
-  /* BLOCO DE INFORMAÇÕES */
-  .info-contacto {
+}
+
+/* BLOCO DE INFORMAÇÕES */
+.info-contacto {
     background-color: #fff;
     padding: 30px;
     border-radius: 12px;
@@ -40,24 +40,24 @@
     font-size: 15px;
     line-height: 1.7;
     color: #444;
-  }
-  
-  .contact-item {
+}
+
+.contact-item {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     margin-bottom: 16px;
-  }
-  
-  .contact-item img.contact-icon {
+}
+
+.contact-item img.contact-icon {
     width: 22px;
     height: 22px;
     margin-top: 4px;
     filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(-10deg);
-  }
-  
-  /* MAPA E LOCALIZAÇÃO COM ENDEREÇO */
-  .mapa {
+}
+
+/* MAPA E LOCALIZAÇÃO COM ENDEREÇO */
+.mapa {
     background-color: #fff;
     border-radius: 12px;
     padding: 12px;
@@ -66,80 +66,83 @@
     flex-direction: column;
     gap: 20px;
     align-items: flex-start;
-  }
-  
-  .mapa .map-address {
+}
+
+.mapa .map-address {
     display: flex;
     align-items: flex-start;
     gap: 12px;
     font-size: 15px;
     color: #444;
-  }
-  
-  .mapa .map-address img {
+}
+
+.mapa .map-address img {
     width: 22px;
     height: 22px;
     margin-top: 4px;
     filter: brightness(0) saturate(100%) invert(20%) sepia(100%) saturate(1000%) hue-rotate(-10deg);
-  }
-  
-  .mapa iframe {
+}
+
+.mapa iframe {
     width: 100%;
     height: 300px;
     border: none;
     border-radius: 10px;
-  }
-  
-  /* FORMULÁRIO DE CONTACTO */
-  .formulario {
+}
+
+/* FORMULÁRIO DE CONTACTO */
+.formulario {
     grid-column: 1 / -1;
     background-color: #fff;
     padding: 30px;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     margin-top: 20px;
-  }
-  
-  .formulario p {
+}
+
+.formulario p {
     font-size: 14px;
     color: #666;
     margin-bottom: 20px;
-  }
-  
-  .formulario form {
+    text-align: center;
+}
+
+.formulario form {
     display: flex;
     flex-direction: column;
     gap: 15px;
-  }
-  
-  .formulario label {
+    align-items: center;
+}
+
+.formulario label {
     font-weight: 600;
     color: #333;
     font-size: 14px;
-  }
-  
-  .formulario input,
-  .formulario textarea {
+}
+
+.formulario input,
+.formulario textarea {
     padding: 10px 14px;
     border-radius: 8px;
     border: 1px solid #ccc;
     font-size: 14px;
     background-color: #fefefe;
     transition: border-color 0.3s;
-  }
-  
-  .formulario input:focus,
-  .formulario textarea:focus {
+    width: 50%;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
     border-color: #c71212;
     outline: none;
-  }
-  
-  .formulario textarea {
-    min-height: 120px;
+}
+
+.formulario textarea {
+    min-height: 70px;
     resize: vertical;
-  }
-  
-  .formulario button {
+}
+
+.formulario button {
     background-color: #c71212;
     color: white;
     font-size: 15px;
@@ -149,23 +152,66 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
-    width:150px;
-  }
-  
-  .formulario button:hover {
+    width: 150px;
+}
+
+.formulario button:hover {
     background-color: #a00e0e;
-  }
-  
-  /* RESPONSIVO */
-  @media (max-width: 768px) {
+}
+
+/* Social Links contatos */
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding-inline: 16px;
+}
+
+.contact-item a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+
+.contact-item a:hover {
+    opacity: 0.9;
+    transform: translateX(3px);
+}
+.contact-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+}
+
+/* Social Links contatos */
+
+
+.map-address a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    padding: 5px 0;
+}
+.map-address a:hover {
+    opacity: 0.9;
+    transform: translateX(3px);
+}
+/* RESPONSIVO */
+@media (max-width: 768px) {
     .contactos-container {
-      grid-template-columns: 1fr;
-      padding: 20px;
+        grid-template-columns: 1fr;
+        padding: 20px;
     }
-  
-    .mapa, .formulario {
-      grid-column: 1 / -1;
+
+    .mapa,
+    .formulario {
+        grid-column: 1 / -1;
     }
-  }
-  
-  
+}
