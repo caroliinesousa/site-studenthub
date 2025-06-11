@@ -22,6 +22,7 @@
   margin: 0 auto;
   margin-bottom: 50px;
   margin-top: -120px;
+  overflow: hidden;
 }
 
 .slide {
@@ -33,9 +34,9 @@
   object-fit: cover;
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
   transition: all 0.6s ease;
-  opacity: 0.4;
+  opacity: 0;
   z-index: 1;
-  margin-top: 90px;
+  margin-top: 100px;
 }
 
 .slide.center {
@@ -46,22 +47,67 @@
 }
 
 .slide.left {
-  left: 30%; 
+  left: 30%;
   transform: translate(-50%, -50%) scale(0.85) rotateY(10deg);
   z-index: 2;
-  opacity: 0.3;
+  opacity: 0.4;
 }
 
 .slide.right {
-  left: 70%; 
+  left: 70%;
   transform: translate(-50%, -50%) scale(0.85) rotateY(-10deg);
   z-index: 2;
-  opacity: 0.3;
+  opacity: 0.4;
 }
+
+/* Setas*/
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.6);
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 4;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.nav.prev {
+  left: 10px;
+  margin-top: 110px;
+}
+
+.nav.next {
+  right: 10px;
+  margin-top: 110px;
+}
+
+/* Indicadores de Imagem */
+.indicators {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin: 5px;
+  background-color: #bbb;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.dot.active {
+  background-color: #333;
+}
+
 
 /* Descubra o StudentHub */
 .student-hub {
-  margin-top: 100px; 
+  margin-top: 30px; 
   text-align: center;
   padding: 10px 0;
   margin-left: 60px;
@@ -84,6 +130,7 @@
     border-radius: 5px;
 }
 
+/* Imagens do StudentHub */
 h2 {
   text-align: center;
   font-size: 2em;
@@ -114,16 +161,15 @@ p.section-subtitle {
   padding: 20px;
   
 }
-
 .mosaic-image {
   width: 100%;
   aspect-ratio: 1 / 1;
   object-fit: cover;
-  border: 2px solid #eb0927;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   border-radius: 6px;
   margin-bottom: 12px;
+  
 }
-
 .mosaic-title {
   font-weight: bold;
   color: #eb0927;
@@ -135,6 +181,7 @@ p.section-subtitle {
   color: #555;
   padding: 0 10px;
 }
+
 
 
 /* Nossos Eventos */
