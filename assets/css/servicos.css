@@ -167,26 +167,41 @@
     }
 }
 
-/***** BOTÃO CONTACTOS *****/
-.botao-contactos {
+/***** SECSAO CONTACTOS *****/
+.contact-section {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 40px 20px;
     text-align: center;
-    margin: 40px 0 20px;
-}
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    max-width: 400px;
+    margin: 50px auto;
+  }  
 
-.btn-contactar {
-    background-color: #c71212;
-    color: #fff;
-    padding: 12px 24px;
-    text-decoration: none;
-    font-size: 16px;
-    border-radius: 6px;
-    transition: background-color 0.3s;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
-}
+  .contact-section h2 {
+    color: #D1001F;
+    font-size: 32px;
+    margin-bottom: 15px;
+  }
 
-.btn-contactar:hover {
-    background-color: #a00e0e;
-}
+  .contact-section p {
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 25px;
+  }
+
+  .contactar-button {
+    display: inline-block;
+    background-color: #D1001F;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+  .contactar-button:hover {
+    background-color: #790909;
+  }
 
 /***** RESPONSIVIDADE PAG SERVICOS *****/
 @media (max-width: 1024px) {
