@@ -299,6 +299,7 @@
 @media (max-width: 640px) {
   .slide {
     position: relative;
+    max-width: 90%;
     width: 100%;
     height: auto;
     transform: none !important;
@@ -324,8 +325,39 @@
 }
 
 
+
 /* Telas pequenas: celulares */
 @media (max-width: 640px) {
+  .carrossel {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .slide {
+    position: relative;
+    width: 90%;
+    max-width: 100%;
+    height: 220px;
+    object-fit: cover;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    opacity: 1 !important;
+    z-index: auto !important;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .nav,
+  .indicators {
+    display: none; /* Esconde setas e indicadores no mobile */
+  }
+
   .boas-vindas,
   .student-hub,
   .nossos-eventos {
@@ -337,26 +369,6 @@
   .student-hub h1,
   .nossos-eventos h1 {
     font-size: 20px;
-  }
-
-  .carrossel {
-    width: 100%;
-    height: auto;
-    margin-top: 20px;
-  }
-
-  .slide {
-    width: 90%;
-    height: auto;
-    left: 50% !important;
-    transform: translate(-50%, -50%) scale(1) !important;
-    opacity: 1 !important;
-    z-index: 1;
-  }
-
-  .nav {
-    font-size: 1.5rem;
-    padding: 8px;
   }
 
   .mosaic-grid,
@@ -383,4 +395,3 @@
     font-size: 14px;
   }
 }
-

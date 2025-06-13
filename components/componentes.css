@@ -326,22 +326,26 @@
 }
 
 .footer-contact {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* centraliza horizontalmente os itens */
+  text-align: center;  /* alinha textos ao centro */
+  gap: 12px;
+  margin: 0 auto;
 }
 
 .footer-item {
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center; /* centraliza o ícone e texto juntos */
 }
 
 .footer-icon {
-    width: 18px;
-    height: 18px;
-    filter: brightness(0) invert(1);
-    fill:#ffffff;
+  width: 18px;
+  height: 18px;
+  filter: brightness(0) invert(1);
+  fill:#ffffff;
 }
 
 /* Copyright */
