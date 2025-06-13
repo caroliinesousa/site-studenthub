@@ -125,7 +125,6 @@
     transform: rotate(-45deg);
     top: 0;
 }
-
 /* ===== RESPONSIVIDADE ===== */
 @media (max-width: 992px) {
     .logo img {
@@ -156,6 +155,7 @@
         padding: 20px;
         gap: 25px;
         transition: right 0.3s ease;
+        display: flex;
     }
     
     /* Mostra o menu quando ativo */
@@ -198,6 +198,7 @@
         width: 80%;
     }
 }
+
 /* ===== FOOTER STYLES ===== */
 .footer-container {
     max-width: 1200px;

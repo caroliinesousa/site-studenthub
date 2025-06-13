@@ -70,6 +70,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
     padding: 20px;
+    
 }
 
 .destaque {
@@ -78,6 +79,7 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
+    height: 100%;
     
 }
 
@@ -202,6 +204,10 @@
   .contactar-button:hover {
     background-color: #790909;
   }
+  /* Ligacao de links para o scroll ser suave */
+  html {
+  scroll-behavior: smooth;
+}
 
 /***** RESPONSIVIDADE PAG SERVICOS *****/
 @media (max-width: 1024px) {
