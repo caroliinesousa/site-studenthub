@@ -19,9 +19,7 @@
   position: relative;
   width: 800px;
   height: 500px;
-  margin: 0 auto;
-  margin-bottom: 50px;
-  margin-top: -120px;
+  margin: 50px auto; 
   overflow: hidden;
 }
 
@@ -36,8 +34,9 @@
   transition: all 0.6s ease;
   opacity: 0;
   z-index: 1;
-  margin-top: 100px;
+  margin-top: -50px;
 }
+
 
 .slide.center {
   left: 50%;
@@ -72,21 +71,23 @@
   z-index: 4;
   padding: 10px;
   border-radius: 50%;
+  margin-top: 200px;
 }
 
 .nav.prev {
   left: 10px;
-  margin-top: 110px;
+  margin-top: -40px;
 }
 
 .nav.next {
   right: 10px;
-  margin-top: 110px;
+  margin-top: -40px;
 }
 
 /* Indicadores de Imagem */
 .indicators {
   text-align: center;
+  margin-top: -130px;
 }
 
 .dot {
@@ -108,7 +109,7 @@
 /* --- Estilo do Student Hub igual ao Nossos Eventos --- */
 
 .student-hub {
-  margin-top: 100px;
+  margin-top: 30px;
   text-align: center;
   padding: 10px 0;
   margin-left: 60px;
@@ -153,7 +154,7 @@
   background-color: #eb0927;
   border-radius: 4px;
   width: 300px;
-  height: 170px;
+  height: 200px;
   padding: 10px;
   display: flex;
   flex-direction: column;
@@ -198,7 +199,7 @@
 
 /* Nossos Eventos */
 .nossos-eventos {
-  margin-top: 100px; 
+  margin-top: 60px; 
   text-align: center;
   padding: 10px 0;
   margin-left: 60px;
@@ -294,4 +295,92 @@
   cursor: pointer;
 }
 
+/* Corrigir carrossel para telas pequenas */
+@media (max-width: 640px) {
+  .slide {
+    position: relative;
+    width: 100%;
+    height: auto;
+    transform: none !important;
+    left: auto !important;
+    top: auto !important;
+    opacity: 1 !important;
+    z-index: auto !important;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+
+  .carrossel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+  }
+
+  .nav,
+  .indicators {
+    display: none; /* Esconde setas e indicadores em mobile */
+  }
+}
+
+
+/* Telas pequenas: celulares */
+@media (max-width: 640px) {
+  .boas-vindas,
+  .student-hub,
+  .nossos-eventos {
+    margin-left: 0;
+    padding: 0 10px;
+  }
+
+  .boas-vindas h1,
+  .student-hub h1,
+  .nossos-eventos h1 {
+    font-size: 20px;
+  }
+
+  .carrossel {
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+
+  .slide {
+    width: 90%;
+    height: auto;
+    left: 50% !important;
+    transform: translate(-50%, -50%) scale(1) !important;
+    opacity: 1 !important;
+    z-index: 1;
+  }
+
+  .nav {
+    font-size: 1.5rem;
+    padding: 8px;
+  }
+
+  .mosaic-grid,
+  .lista-eventos {
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    padding: 10px;
+  }
+
+  .mosaic-item,
+  .event-card-facul {
+    width: 90%;
+    height: auto;
+  }
+
+  .mosaic-description,
+  .evento-conteudo-facul p {
+    font-size: 12px;
+  }
+
+  .mosaic-title,
+  .evento-conteudo-facul h3 {
+    font-size: 14px;
+  }
+}
 
