@@ -13,11 +13,10 @@
     background: white;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 900px;
     overflow: hidden;
     display: grid;
-    grid-template-columns: 1fr 1px 1fr;
+    grid-template-columns: 1fr;
+    margin: 0 auto;
 }
 
 /* Forms */
@@ -27,10 +26,12 @@
 
 .login-form {
     background: #fff;
+    max-width: 375px;
 }
 
 .register-form {
     background: #f9f9f9;
+    display: none;
 }
 
 h1, h2 {
@@ -48,6 +49,15 @@ h2 {
     font-size: 24px;
 }
 
+.register-account {
+    color: #ee0927;
+    font-weight: bold;
+    cursor: pointer;
+}
+.register-account:hover {
+    text-decoration: underline;
+}
+
 /* Form Elements */
 .form-group {
     margin-bottom: 20px;
@@ -61,6 +71,7 @@ h2 {
 }
 
 .form-group input {
+    box-sizing: border-box;
     width: 100%;
     padding: 12px 15px;
     border: 1px solid #ddd;
