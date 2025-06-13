@@ -31,7 +31,7 @@
 
 .register-form {
     background: #f9f9f9;
-    display: none;
+    display:none;
 }
 
 h1, h2 {
@@ -47,6 +47,7 @@ h1 {
 
 h2 {
     font-size: 24px;
+    color: #ee0927;
 }
 
 .register-account {
@@ -85,6 +86,18 @@ h2 {
     outline: none;
 }
 
+.input-with-dropdown{
+    display: flex;
+    column-gap: 10px;
+}
+
+.user-type-select{
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: "Montserrat";
+    padding-inline: 15px;
+}
+
 /* Buttons */
 .btn-login-form, .btn-register {
     width: 100%;
@@ -108,7 +121,7 @@ h2 {
 }
 
 .btn-register {
-    background-color: #333;
+    background-color: #ee0927;
     color: white;
 }
 

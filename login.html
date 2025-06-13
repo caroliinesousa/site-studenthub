@@ -31,7 +31,7 @@
                     <button type="submit" class="btn-login-form">Entrar</button>
                 </form>
                 <p>
-                    Ainda não tem uma conta? <a class="register-account">Crie a sua conta!</a>
+                    Ainda não tem uma conta? <a id="btn-goto-register" class="register-account">Crie a sua conta!</a>
                 </p>
             </section>
             <!-- Formulário de Registo -->
@@ -40,17 +40,18 @@
                 <form>
                     <div class="form-group">
                         <label for="name">Nome</label>
-                        <input type="text" id="name" required>
+
+                        <input type="text" id="name" required placeholder="Nome">
+
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" required>
+                        <input type="email" id="email" required placeholder="Email">
                     </div>
                     <div class="form-group">
                         <label for="user-type">Número de aluno/Número de professor</label>
                         <div class="input-with-dropdown">
                             <select id="user-type" class="user-type-select" required>
-                                <option value="" disabled selected hidden>Selecione o tipo</option>
                                 <option value="aluno">Aluno</option>
                                 <option value="professor">Professor</option>
                             </select>
@@ -59,19 +60,23 @@
                     </div>
                     <div class="form-group">
                         <label for="new-password">Introduza a sua Senha</label>
-                        <input type="password" id="new-password" placeholder="senha" required>
+                        <input type="password" id="new-password" placeholder="Senha" required>
                     </div>
                     <div class="form-group">
                         <label for="confirm-password">Confirme a sua Senha</label>
-                        <input type="password" id="confirm-password" placeholder="senha" required>
+                        <input type="password" id="confirm-password" placeholder="Senha" required>
                     </div>
                     <button type="submit" class="btn-register">Registe-se</button>
                 </form>
+                <p>
+                    Já possui uma conta? <a id="btn-return-login" class="register-account">Entre na sua conta!</a>
+                </p>
             </section>
         </div>
     </main>
     <footer class="footer">
         <div id="footer"></div>
     </footer>
-</body>
+    <script src="./assets/js/login.js"></script>
+    </body>
 </html>
