@@ -12,3 +12,7 @@ btnToLogin.addEventListener("click",() => {
     enterSec.style.display = "block"
     registerSec.style.display = "none"
 })
+
+//login 
+const emailLogin = document.querySelector("#username")
+const passworLogin = document.querySelector("#")
