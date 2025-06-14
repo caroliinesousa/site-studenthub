@@ -1,0 +1,24 @@
+•	Morada:
+Universidade Ipluso,
+Avenida do Conhecimento, nº 123,
+1000-200 Lisboa, Portugal
+•	Telefone Geral:
+(+351) 210 123 456
+•	E-mails de Contacto:
+o	Informações Gerais: info@ipluso.edu.pt
+o	Apoio ao Estudante: apoio.estudante@ipluso.edu.pt
+o	Serviços Académicos: servicos.academicos@ipluso.edu.pt
+o	Relações Internacionais: relacoes.internacionais@ipluso.edu.pt
+o	Empregabilidade: empregabilidade@ipluso.edu.pt
+•	Horário de Atendimento:
+Segunda a Sexta-feira: 9h00 - 17h00
+Sábado: 9h00 - 13h00
+•	Redes Sociais:
+o	Facebook: facebook.com/ipluso
+o	Instagram: instagram.com/ipluso
+o	LinkedIn: linkedin.com/school/ipluso
+________________________________________
+Mapa Interativo
+Podem utilizar o iFrame que foi mostrado em aula para adicionar um mapa do campus utilizando a api do Google Maps.
+
+
