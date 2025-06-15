@@ -14,6 +14,7 @@ function initMenu() {
   if (userLogin) {
     loginBtn.textContent = "Sair"
   }
+  
   if (loginBtn.textContent.includes("Sair")){
     loginBtn.addEventListener('click',() => {
       localStorage.removeItem("loginSession")
