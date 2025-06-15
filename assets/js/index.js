@@ -1,9 +1,9 @@
 // Espera o DOM carregar para garantir que os elementos existem
 document.addEventListener("DOMContentLoaded", function () {
   const images = [
-    "/assets/images/homepage/carrosell1.webp",
-    "/assets/images/homepage/carrosell2.webp",
-    "/assets/images/homepage/carrosell3.webp",
+    "./assets/images/homepage/carrosell1.webp",
+    "./assets/images/homepage/carrosell2.webp",
+    "./assets/images/homepage/carrosell3.webp",
   ];
 
   let currentIndex = 1;
