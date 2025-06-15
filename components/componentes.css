@@ -77,9 +77,9 @@
     background-color: #fff;
     color: #eb0927;
 }
-
-
-
+.nav-menu a:hover .icon-entrar {
+    filter: brightness(0) saturate(100%) invert(19%) sepia(91%) saturate(7472%) hue-rotate(349deg) brightness(104%) contrast(112%);
+}
 
 /* ===== MENU MOBILE ===== */
 .menu-toggle {
