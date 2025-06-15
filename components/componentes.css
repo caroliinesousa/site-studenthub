@@ -60,6 +60,17 @@
     border-radius: 4px;
     transition: all 0.3s ease;
     white-space: nowrap;
+    align-items: center;
+    display: flex;
+}
+
+.icon-entrar{
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    position: relative;
+    top: 1px;
+    transform: rotate(180deg);
 }
 
 .nav-menu a:hover {
@@ -67,10 +78,6 @@
     color: #eb0927;
 }
 
-.btn-login {
-    background-color: #fff;
-    color: #eb0927 !important;
-}
 
 
 
