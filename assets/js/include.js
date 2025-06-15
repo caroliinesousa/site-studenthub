@@ -3,11 +3,12 @@
  * @param {string} selector - ID do elemento onde o conteúdo será inserido (ex: #header)
  * @param {string} file - Caminho do arquivo HTML a ser carregado
  */
-function includeHTML(selector, file) {
+function includeHTML(selector, file, callback) {
     fetch(file) // faz requisição do arquivo
       .then(res => res.text()) // transforma a resposta em texto HTML
       .then(data => {
         document.querySelector(selector).innerHTML = data; // insere no DOM
+      if (callback) callback();
       });
   }
   

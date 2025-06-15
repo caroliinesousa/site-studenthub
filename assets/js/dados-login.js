@@ -256,5 +256,11 @@ export const dadosLogin = [
         name: "Fátima Fernandes", 
         email: "fatima.fernandes@example.com", 
         password: "101112336" 
+    },
+    { 
+        id: "p269302131",
+        name: "Alexandra Rodrigues", 
+        email: "alexandra.rodrigues@example.com", 
+        password: "269302131" 
     }
 ];

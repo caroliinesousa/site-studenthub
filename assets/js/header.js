@@ -8,4 +8,19 @@ function initMenu() {
       navMenu.classList.toggle('active');
     });
   }
+  const loginBtn = document.querySelector("#btn-login")
+  const userLogin = JSON.parse(localStorage.getItem("loginSession"))
+
+  if (userLogin) {
+    loginBtn.textContent = "Sair"
+  }
+  if (loginBtn.textContent.includes("Sair")){
+    loginBtn.addEventListener('click',() => {
+      localStorage.removeItem("loginSession")
+      location.reload()
+    })
+  }
+
 }
+
+

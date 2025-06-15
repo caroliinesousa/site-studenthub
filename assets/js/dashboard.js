@@ -1,6 +1,8 @@
+import {dadosLogin} from "./dados-login.js"
+
 const tbody = document.querySelector("#tbody-user")
 const userListString = localStorage.getItem("users")
-const userList = JSON.parse(userListString)
+const userList = userListString ? JSON.parse(userListString):dadosLogin;
 
 
 userList.forEach(user => {
