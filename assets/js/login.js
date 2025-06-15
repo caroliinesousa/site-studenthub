@@ -1,3 +1,5 @@
+import {dadosLogin} from "./dados-login.js"
+
 const enterSec = document.querySelector(".login-form")
 const registerSec = document.querySelector(".register-form")
 const btnToRegister = document.querySelector("#btn-goto-register")
@@ -35,15 +37,24 @@ submitForm.addEventListener("click",(e) => {
     if (!/^\d{9}$/.test(nifForm.value)) {
         nifValidation.textContent = "O nif tem de ter 9 digitos"
     }
+
     if (passwordForm !== confirmPasswordForm) {
         passwordValidation.textContent = "As passwords têm de ser iguais"
     }
-    alert(`
-        ${nameForm.value}
-        ${emailForm.value}
-        ${typeForm.value}${nifForm.value}
-        ${passwordForm.value}
-        ${confirmPasswordForm.value}
-        `)
+
+    const user = { 
+        id:typeForm.value+nifForm.value,
+        name: nameForm.value, 
+        email: emailForm.value, 
+        password: passwordForm.value
+    };    
+    
+    const listUsers = localStorage.getItem('users');
+    const users = listUsers ? JSON.parse(listUsers): dadosLogin;
+    users.push(user)
+
+    localStorage.setItem('users', JSON.stringify(users));
+    console.log("usuario cadastrado:", user)
 })
 
+// Lendo a string
