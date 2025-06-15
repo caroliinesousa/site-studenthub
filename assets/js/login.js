@@ -15,4 +15,8 @@ btnToLogin.addEventListener("click",() => {
 
 //login 
 const emailLogin = document.querySelector("#username")
+<<<<<<< Updated upstream
 //const passworLogin = document.querySelector("#")
+=======
+const passworLogin = document.querySelector("#password")
+>>>>>>> Stashed changes
