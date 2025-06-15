@@ -129,6 +129,14 @@ h2 {
     background-color: #222;
 }
 
+.alert {
+    color: #eb0927;
+    font-size: 14px;
+    display: block;
+    margin-top: 4px;
+    margin-left: 10px;
+}
+
 /* Divider */
 .divider {
     position: relative;

@@ -15,9 +15,35 @@ btnToLogin.addEventListener("click",() => {
 
 //Register Validation
 const nameForm = document.querySelector("#name")
-const emailForm = document.querySelector("email")
+const emailForm = document.querySelector("#email")
 const typeForm = document.querySelector("#user-type")
 const nifForm = document.querySelector("#user-number")
-const passworForm = document.querySelector("#new-password")
+const nifValidation = document.querySelector("#alert-nif")
+const passwordForm = document.querySelector("#new-password")
 const confirmPasswordForm = document.querySelector("#confirm-password")
+const submitForm = document.querySelector("#submit-register")
+const passwordValidation = document.querySelector("#alert-password")
+
+//impede de digitar letras
+nifForm.addEventListener("input", function () {
+    this.value = this.value.replace(/\D/g, "").slice(0, 9);
+});
+
+submitForm.addEventListener("click",(e) => {
+    e.preventDefault()
+    //regex para garantir que nif tem 9 numeros
+    if (!/^\d{9}$/.test(nifForm.value)) {
+        nifValidation.textContent = "O nif tem de ter 9 digitos"
+    }
+    if (passwordForm !== confirmPasswordForm) {
+        passwordValidation.textContent = "As passwords têm de ser iguais"
+    }
+    alert(`
+        ${nameForm.value}
+        ${emailForm.value}
+        ${typeForm.value}${nifForm.value}
+        ${passwordForm.value}
+        ${confirmPasswordForm.value}
+        `)
+})
 
