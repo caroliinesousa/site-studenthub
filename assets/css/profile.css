@@ -1,0 +1,71 @@
+@import url("normalize.css");
+
+h1 {
+    margin-top: 120px;
+    text-align: center;
+    font-size: 24px;
+    color: #c71212;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+h1::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #c71212;
+    margin: 12px auto 0;
+    border-radius: 5px;
+}
+
+.profile-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding-inline: 40px;
+    column-gap: 40px
+}
+
+.profile-photo-card {
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr;
+}
+
+.profile-photo {
+    width: 100%;
+    
+}
+
+.profile-info-card {
+    box-sizing: border-box;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto 50px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr;
+}
+
+.info-group {
+    margin-bottom: 20px;
+}
+
+.info-label {
+    font-weight: bold;
+    color: #555;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-value {
+    font-size: 1.1rem;
+    padding: 0.5rem;
+    background: #f9f9f9;
+    border-radius: 5px;
+}
