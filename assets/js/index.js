@@ -1,28 +1,3 @@
-//header === responsivo
-function inicializarMenu() {
-    const menuToggle = document.querySelector('.menu-toggle');
-    const navMenu = document.querySelector('.nav-menu');
-
-    if (!menuToggle || !navMenu) return;
-
-    menuToggle.addEventListener('click', function () {
-        this.classList.toggle('active');
-        navMenu.classList.toggle('active');
-        document.body.style.overflow = navMenu.classList.contains('active') ? 'hidden' : 'auto';
-    });
-
-    document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('active');
-            menuToggle.classList.remove('active');
-            document.body.style.overflow = 'auto';
-        });
-    });
-}
-
-// CHAMADA FINAL
-document.addEventListener('DOMContentLoaded', inicializarMenu);
-
 // Espera o DOM carregar para garantir que os elementos existem
 document.addEventListener("DOMContentLoaded", function () {
   const images = [

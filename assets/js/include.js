@@ -14,9 +14,10 @@ function includeHTML(selector, file) {
   // Ao carregar a página
   window.addEventListener("DOMContentLoaded", () => {
     // Insere o conteúdo do header no elemento com id="header"
-    includeHTML("#header", "../components/header.html");
-  
+    includeHTML("#header", "../components/header.html", () => {
+    initMenu();
+  });
+    
     // Insere o conteúdo do footer no elemento com id="footer"
     includeHTML("#footer", "../components/footer.html");
   });
-  
