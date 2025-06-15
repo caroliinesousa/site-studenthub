@@ -23,7 +23,9 @@ h1::after {
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-inline: 40px;
-    column-gap: 40px
+    column-gap: 40px;
+    max-width: 1200px;
+    margin-inline: auto;
 }
 
 .profile-photo-card {
@@ -37,7 +39,11 @@ h1::after {
 
 .profile-photo {
     width: 100%;
-    
+    height: 100%;
+    max-width: 540px;
+    max-height: 320px;
+    object-fit: cover;
+    object-position: center;
 }
 
 .profile-info-card {
