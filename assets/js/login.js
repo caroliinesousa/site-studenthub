@@ -13,18 +13,11 @@ btnToLogin.addEventListener("click",() => {
     registerSec.style.display = "none"
 })
 
-//login 
-const emailLogin = document.querySelector("#username")
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-//const passworLogin = document.querySelector("#")
-=======
-const passworLogin = document.querySelector("#password")
->>>>>>> Stashed changes
-=======
-const passworLogin = document.querySelector("#password")
->>>>>>> Stashed changes
-=======
-const passworLogin = document.querySelector("#password")
->>>>>>> Stashed changes
+//Register Validation
+const nameForm = document.querySelector("#name")
+const emailForm = document.querySelector("email")
+const typeForm = document.querySelector("#user-type")
+const nifForm = document.querySelector("#user-number")
+const passworForm = document.querySelector("#new-password")
+const confirmPasswordForm = document.querySelector("#confirm-password")
+
