@@ -22,6 +22,14 @@ function initMenu() {
     })
   }
 
+  const profileBtn = document.querySelector("#profile")
+
+  if (userLogin){
+    profileBtn.style.display = "block"
+  }else{
+    profileBtn.style.display = "none"
+  }
+
 }
 
 

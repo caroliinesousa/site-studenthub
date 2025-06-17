@@ -81,6 +81,10 @@
     filter: brightness(0) saturate(100%) invert(19%) sepia(91%) saturate(7472%) hue-rotate(349deg) brightness(104%) contrast(112%);
 }
 
+.btn-profile{
+    display: none;
+}
+
 /* ===== MENU MOBILE ===== */
 .menu-toggle {
     display: none; /* Escondido por padrão (visível apenas em mobile) */
