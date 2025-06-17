@@ -55,6 +55,8 @@ submitForm.addEventListener("click", (e) => {
 
     enterSec.style.display = "block"
     registerSec.style.display = "none"
+
+    
 })
 
 

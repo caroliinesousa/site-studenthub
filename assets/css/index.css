@@ -2,24 +2,23 @@
 
 /* Boas-vindas */
 .boas-vindas {
-  margin-top: 110px; 
+  margin-top: 110px;
   text-align: center;
   padding: 10px 0;
-  margin-left: 60px;
 }
 
 .boas-vindas h1 {
   font-size: 25px;
   margin: 0;
-  color:#eb0927;
+  color: #eb0927;
 }
-  
+
 /* Carrossel de Imagens */
 .carrossel {
   position: relative;
   width: 800px;
   height: 500px;
-  margin: 50px auto; 
+  margin: 50px auto;
   overflow: hidden;
 }
 
@@ -112,7 +111,6 @@
   margin-top: 30px;
   text-align: center;
   padding: 10px 0;
-  margin-left: 60px;
 }
 
 .student-hub h1 {
@@ -156,6 +154,7 @@
   width: 300px;
   height: 200px;
   padding: 10px;
+  padding-bottom: 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -182,7 +181,7 @@
   font-size: 12px;
   font-weight: bold;
   color: white;
-  margin: 0;
+  margin: 10px;
 }
 
 /* Descrição */
@@ -199,50 +198,50 @@
 
 /* Nossos Eventos */
 .nossos-eventos {
-  margin-top: 60px; 
+  margin-top: 60px;
   text-align: center;
   padding: 10px 0;
-  margin-left: 60px;
-
 }
 
-.nossos-eventos	 h1 {
+.nossos-eventos h1 {
   font-size: 25px;
   margin: 0;
-  color:#eb0927;
+  color: #eb0927;
 }
+
 /* Tracinho abaixo de boas vindas */
 .boas-vindas h1::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #c71212;
-    margin: 12px auto 0;
-    border-radius: 5px;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c71212;
+  margin: 12px auto 0;
+  border-radius: 5px;
 }
+
 /* Tracinho abaixo de nossos eventos */
 .nossos-eventos h1::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background-color: #c71212;
-    margin: 12px auto 0;
-    border-radius: 5px;
+  content: '';
+  display: block;
+  width: 60px;
+  height: 3px;
+  background-color: #c71212;
+  margin: 12px auto 0;
+  border-radius: 5px;
 }
 
 
 /* Eventos */
 .lista-eventos {
-  display: flex; 
+  display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: flex-start;
   gap: 20px;
   border-radius: 20px;
   padding: 20px;
-  
+
 }
 
 /* Cada card de evento */
@@ -252,7 +251,8 @@
   align-items: center;
   background-color: #eb0927;
   border-radius: 4px;
-  padding: 10px;
+  padding: 7px;
+  padding-bottom: 50px;
   width: 300px;
   height: 200px;
   margin-bottom: 70px;
@@ -285,6 +285,7 @@
   padding-top: 4px;
   width: 100%;
 }
+
 .event-card-facul {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -320,7 +321,8 @@
 
   .nav,
   .indicators {
-    display: none; /* Esconde setas e indicadores em mobile */
+    display: none;
+    /* Esconde setas e indicadores em mobile */
   }
 }
 
@@ -355,7 +357,8 @@
 
   .nav,
   .indicators {
-    display: none; /* Esconde setas e indicadores no mobile */
+    display: none;
+    /* Esconde setas e indicadores no mobile */
   }
 
   .boas-vindas,

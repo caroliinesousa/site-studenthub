@@ -1,5 +1,11 @@
 @import url("normalize.css");
 
+.pagina-servicos {
+    margin-top: 110px;
+    text-align: center;
+    padding: 10px 0;
+}
+
 .pagina-servicos h2 {
     text-align: center;
     font-size: 24px;
@@ -34,7 +40,7 @@
     overflow: hidden;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
-    
+
 }
 
 .servico:hover {
@@ -60,7 +66,8 @@
     margin: 0 16px 20px;
     line-height: 1.5;
 }
-.secao-servicos{
+
+.secao-servicos {
     margin-top: 30px;
 }
 
@@ -70,7 +77,7 @@
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 24px;
     padding: 20px;
-    
+
 }
 
 .destaque {
@@ -80,7 +87,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
     transition: transform 0.3s, box-shadow 0.3s;
     height: 100%;
-    
+
 }
 
 .destaque:hover {
@@ -106,28 +113,27 @@
     margin: 0 16px 20px;
     line-height: 1.5;
 }
-.secao-destaques{
-    margin-top: 30px;
-}
 
 /***** FAQS *****/
 .secao-faq {
     margin-top: 60px;
     padding: 0 20px;
     max-width: 1200px;
-    margin-left: auto; 
+    margin-left: auto;
     margin-right: auto;
 }
 
 .faq-columns-container {
     display: flex;
-    justify-content: space-between; 
-    gap: 80px; 
+    justify-content: space-between;
+    gap: 80px;
 }
 
 .faq-column {
-    flex: 1; /* Faz ambas as colunas terem a mesma largura */
-    min-width: 0; /* Permite que as colunas se ajustem corretamente */
+    flex: 1;
+    /* Faz ambas as colunas terem a mesma largura */
+    min-width: 0;
+    /* Permite que as colunas se ajustem corretamente */
 }
 
 .faq-item {
@@ -154,15 +160,16 @@
 /* Responsividade */
 @media (max-width: 768px) {
     .faq-columns-container {
-        flex-direction: column; /* Empilha as colunas em mobile */
+        flex-direction: column;
+        /* Empilha as colunas em mobile */
         gap: 15px;
     }
-    
+
     .secao-faq {
         padding: 0 15px;
         margin-top: 40px;
     }
-    
+
     .faq-item {
         padding: 15px;
         margin-bottom: 15px;
@@ -175,38 +182,39 @@
     border-radius: 10px;
     padding: 40px 20px;
     text-align: center;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     max-width: 400px;
     margin: 50px auto;
-  }  
+}
 
-  .contact-section h2 {
+.contact-section h2 {
     color: #D1001F;
     font-size: 32px;
     margin-bottom: 15px;
-  }
+}
 
-  .contact-section p {
+.contact-section p {
     color: #000;
     font-size: 18px;
     margin-bottom: 25px;
-  }
+}
 
-  .contactar-button {
+.contactar-button {
     display: inline-block;
     background-color: #D1001F;
     padding: 15px 30px;
     border-radius: 8px;
     font-weight: bold;
     color: #ffffff;
-  }
+}
 
-  .contactar-button:hover {
+.contactar-button:hover {
     background-color: #790909;
-  }
-  /* Ligacao de links para o scroll ser suave */
-  html {
-  scroll-behavior: smooth;
+}
+
+/* Ligacao de links para o scroll ser suave */
+html {
+    scroll-behavior: smooth;
 }
 
 /***** RESPONSIVIDADE PAG SERVICOS *****/
