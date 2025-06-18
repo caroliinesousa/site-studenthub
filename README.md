@@ -6,7 +6,7 @@
 
 Abaixo, uma prévia da interface inicial do StudentHub:
 
-![Imagem da Página Inicial](assets/img/pagina-inicial.png)
+![Imagem da Página Inicial](assets/img/pagina_inicial.png)
 
 ## 🚀 Funcionalidades Principais
 
