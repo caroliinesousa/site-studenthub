@@ -2,6 +2,12 @@
 
 **DWDM StudentHub v1.0** é uma plataforma web desenvolvida como parte do projeto final da disciplina de Desenvolvimento Web e Dispositivos Móveis (DWDM). A aplicação tem como objetivo proporcionar um portal acadêmico funcional e visualmente agradável para estudantes universitários, permitindo-lhes interagir com conteúdos, notícias e funcionalidades diversas relacionadas ao meio acadêmico.
 
+## 🖼️ Página Inicial
+
+Abaixo, uma prévia da interface inicial do StudentHub:
+
+![Imagem da Página Inicial](assets/img/pagina-inicial.png)
+
 ## 🚀 Funcionalidades Principais
 
 - 🔐 Autenticação de Usuário (Login / Registro)
@@ -15,7 +21,6 @@
 
 - **Frontend**: HTML5, CSS3, JavaScript
 - **Design Responsivo**: Flexbox, Grid Layout, Media Queries
-
 
 ## ⚙️ Instruções de Uso
 
@@ -37,11 +42,6 @@
 - **Ana Sousa, Alexandra Rodrigues, Vitor Fontenele**
 - **Disciplina**: Programação Web – CTeSP em Desenvolvimento para Web e Dispositivos Móveis
 - **Instituição**: IPluso – Instituto Politécnico da Lusofonia
-
-## 📌 Estado do Projeto
-
-🚧 Em construção – Projeto em desenvolvimento e sujeito a alterações frequentes.
-
 
 ## 📄 Licença
 
