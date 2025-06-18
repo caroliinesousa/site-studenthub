@@ -17,8 +17,14 @@ function includeHTML(selector, file, callback) {
     // Insere o conteúdo do header no elemento com id="header"
     includeHTML("#header", "./components/header.html", () => {
     initMenu();
+    destacarPaginaAtual() 
   });
     
     // Insere o conteúdo do footer no elemento com id="footer"
     includeHTML("#footer", "./components/footer.html");
   });
+
+  includeHTML("#header", "./components/header.html", () => {
+  initMenu(); // se já estiver funcionando
+  destacarPaginaAtual(); // chama logo após o header carregar
+});

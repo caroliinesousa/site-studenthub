@@ -51,6 +51,11 @@
     gap: 15px;
 }
 
+.nav-link.active {
+    background-color: #ffffff;
+    color: #eb0927;
+}
+
 .nav-menu a {
     text-decoration: none;
     color: #fff;
