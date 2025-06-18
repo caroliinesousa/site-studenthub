@@ -19,8 +19,9 @@ nif.textContent = userInfo.id.slice(1)
 async function getGatinhoUrl() {
     const response = await fetch('https://api.thecatapi.com/v1/images/search');
     const data = await response.json();
-    return data[0].url;
+    return data[0].url; //a imagem ve num array
 }
+
 
 async function getGatinhoUrl() {
     const response = await fetch('https://api.thecatapi.com/v1/images/search');
