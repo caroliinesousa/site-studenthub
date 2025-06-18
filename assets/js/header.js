@@ -2,15 +2,18 @@
 function initMenu() {
   const menuToggle = document.querySelector('.menu-toggle');
   const navMenu = document.querySelector('.nav-menu');
-
+  // Ativa/desativa a classe 'active' ao clicar no botão de menu (para mostrar ou esconder o menu)
   if (menuToggle && navMenu) {
     menuToggle.addEventListener('click', function () {
       navMenu.classList.toggle('active');
     });
   }
+
+  // Seleciona o botão de login e recupera a sessão do usuário (se houver) do localStorage
   const loginBtn = document.querySelector("#btn-login")
   const userLogin = JSON.parse(localStorage.getItem("loginSession"))
 
+  // Se o usuário estiver logado, muda o texto do botão para "Sair"
   if (userLogin) {
     loginBtn.textContent = "Sair"
   }
@@ -22,6 +25,7 @@ function initMenu() {
     })
   }
 
+  // Mostra ou oculta o botão de perfil conforme o status de login do usuário
   const profileBtn = document.querySelector("#profile")
 
   if (userLogin){
